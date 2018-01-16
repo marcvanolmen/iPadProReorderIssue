@@ -116,6 +116,25 @@ extension UITableView {
         return self.dequeueReusableCell(withIdentifier: T.reuseIdentifier, for: indexPath) as! T
     }
 }
+extension UIView {
+    
+    class func findShadowImage(under view: UIView?) -> UIImageView? {
+        guard let view = view else {
+            return nil
+        }
+        
+        if view is UIImageView && view.bounds.size.height <= 1 {
+            return (view as! UIImageView)
+        }
+        
+        for subview in view.subviews {
+            if let imageView = findShadowImage(under: subview) {
+                return imageView
+            }
+        }
+        return nil
+    }
+}
 
 class ViewController: UIViewController {
     
@@ -130,14 +149,19 @@ class ViewController: UIViewController {
     // we use the Single Selection state in Editing mode to hide the right multiselection icons.
     // Single selections gives us at least didSelectRowAt
     private var enabledSectionSets = [IndexSet]()
-    
+
+    func removeSinglePixelLine() {
+        UIView.findShadowImage(under: self.navigationController?.navigationBar)?.isHidden = true
+        UIView.findShadowImage(under: self.tabBarController?.tabBar)?.isHidden = true
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.removeSinglePixelLine()
         self.updateData(sections: [
             ProfileListSection(items: [
-                SettingsItem(id: "1", title: "a", enabled: true),
-                SettingsItem(id: "2", title: "b", enabled: true),
+                SettingsItem(id: "1", title: "World News", enabled: true),
+                SettingsItem(id: "2", title: "USWire", enabled: true),
                 SettingsItem(id: "3", title: "c", enabled: true),
                 SettingsItem(id: "4", title: "d", enabled: true),
                 SettingsItem(id: "5", title: "e", enabled: true),
