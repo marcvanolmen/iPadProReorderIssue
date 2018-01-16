@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Knowledge-Regular.ttf">
+            <string>Knowledge-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" id="iN0-l3-epB" customClass="SettingsHeaderView" customModule="rnews" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SWF-0e-mxb">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UQV-2R-Q0X">
+                            <rect key="frame" x="18" y="36.5" width="23.5" height="11.5"/>
+                            <fontDescription key="fontDescription" name="Knowledge-Regular" family="Knowledge" pointSize="10"/>
+                            <color key="textColor" red="0.52549019607843139" green="0.53333333333333333" blue="0.54509803921568623" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="UQV-2R-Q0X" firstAttribute="leading" secondItem="gvT-we-qBu" secondAttribute="leading" constant="18" placeholder="YES" id="ijj-XO-WEW"/>
+                        <constraint firstItem="gvT-we-qBu" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="UQV-2R-Q0X" secondAttribute="trailing" constant="20" id="no4-IH-DQG"/>
+                        <constraint firstItem="gvT-we-qBu" firstAttribute="bottom" secondItem="UQV-2R-Q0X" secondAttribute="bottom" constant="12" id="wcm-2w-w7v"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="gvT-we-qBu"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="SWF-0e-mxb" secondAttribute="trailing" id="8R0-nI-c0R"/>
+                <constraint firstItem="SWF-0e-mxb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="WBN-Qf-6CR"/>
+                <constraint firstItem="SWF-0e-mxb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="rIl-2k-3Wb"/>
+                <constraint firstAttribute="bottom" secondItem="SWF-0e-mxb" secondAttribute="bottom" id="sj3-Fl-rzS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="headerLabel" destination="UQV-2R-Q0X" id="ic7-lk-kyO"/>
+            </connections>
+            <point key="canvasLocation" x="49.5" y="87.5"/>
+        </view>
+    </objects>
+</document>

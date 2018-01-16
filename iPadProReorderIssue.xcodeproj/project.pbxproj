@@ -12,6 +12,7 @@
 		DDD43193200E87680009212B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDD43191200E87680009212B /* Main.storyboard */; };
 		DDD43195200E87680009212B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDD43194200E87680009212B /* Assets.xcassets */; };
 		DDD43198200E87680009212B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDD43196200E87680009212B /* LaunchScreen.storyboard */; };
+		DDD431A1200E8DA10009212B /* SettingsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDD4319F200E8DA10009212B /* SettingsHeaderView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		DDD43194200E87680009212B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDD43197200E87680009212B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DDD43199200E87680009212B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDD431A0200E8DA10009212B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SettingsHeaderView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				DDD43191200E87680009212B /* Main.storyboard */,
 				DDD43194200E87680009212B /* Assets.xcassets */,
 				DDD43196200E87680009212B /* LaunchScreen.storyboard */,
+				DDD4319F200E8DA10009212B /* SettingsHeaderView.xib */,
 				DDD43199200E87680009212B /* Info.plist */,
 			);
 			path = iPadProReorderIssue;
@@ -123,6 +126,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDD431A1200E8DA10009212B /* SettingsHeaderView.xib in Resources */,
 				DDD43198200E87680009212B /* LaunchScreen.storyboard in Resources */,
 				DDD43195200E87680009212B /* Assets.xcassets in Resources */,
 				DDD43193200E87680009212B /* Main.storyboard in Resources */,
@@ -158,6 +162,14 @@
 				DDD43197200E87680009212B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DDD4319F200E8DA10009212B /* SettingsHeaderView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDD431A0200E8DA10009212B /* Base */,
+			);
+			name = SettingsHeaderView.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
